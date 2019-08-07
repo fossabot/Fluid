@@ -1,0 +1,28 @@
+@if $generate-object-classes {
+  //
+  // Note : Experimental and non standard properties
+  // Doc : add doc
+  // https://caniuse.com/#feat=css-scrollbar
+  // only works on Webkit browsers with vendor prefix *NOT* working on the other browsers.
+
+  .scrollbar {
+    &::-webkit-scrollbar {
+      background-color: transparent;
+      height: 4px;
+      width: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #babac0;
+      border-radius: 99px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: #a0a0a5;
+    }
+  }
+}
